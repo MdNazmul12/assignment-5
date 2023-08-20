@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>summer-sale</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -97,7 +97,7 @@
                     </label>
                     <label class="input-group">
                       <input type="text" placeholder="Coupon code" class="input input-bordered" />
-                      <span class="btn btn-secondary">Apply</span>
+                      <span id="apply-btn" class="btn btn-secondary ">Apply</span>
                     </label>
                   </div>
              
@@ -107,12 +107,12 @@
               <hr class="mt-4">
            <div class="text-black">
             <p class="text-3xl mt-6">Total Price: <span id="Total" >0.00 Tk</span></p>
-            <p class="text-3xl">Discount: <span>0.00 Tk</span></p>
+            <p id="discount" class="text-3xl">Discount: <span>0.00 Tk</span></p>
             
-            <p class="text-3xl">Total <Price:spa>0.00 Tk</Price:spa></p>
+            <p  class="text-3xl">Total: <span id="total-grid"> 0.00 Tk</span></p>
             <hr class="mt-4">
            </div>
-              <button class="btn btn-secondary w-[294px] h-[56px] rounded-lg  mt-10 disabled">Make Purchase</button>
+              <button onclick="makePur(this)" class="btn btn-secondary w-[294px] h-[56px] rounded-lg  mt-10 ">Make Purchase</button>
              
               </div>
             
